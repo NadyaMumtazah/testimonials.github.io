@@ -1,0 +1,141 @@
+body {
+    background-color:#eeeeee;
+}
+.container {
+    margin: 50px 20px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+    row-gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item1 {
+    background-color: #6930c3;
+    grid-area: daniel;
+    border-radius: 5px;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 310px 0px;
+}
+
+.item2 {
+    background-color: #3b5360;
+    grid-area: jonathan;
+    border-radius: 5px;
+}
+
+
+.item4 {
+    background-color: white;
+    grid-area: jeanette;
+    border-radius: 5px;
+}
+
+.item5 {
+    background-color: #141829;
+    grid-area: patrick;
+    border-radius: 5px;
+}
+
+.item6 {
+    background-color: white;
+    grid-area: kira;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content .text {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.content .message {
+    color: #555555;
+}
+
+.user {
+    display: flex;
+}
+
+.user .profile {
+    padding-left: 20px;
+}
+
+.user .profile .diff {
+    color: #222831;
+}
+
+.profile span {
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+
+.user .spc {
+    border: none;
+}
+
+.user img {
+    border-radius: 50%;
+    border: 2px solid #845ec2;
+}
+
+
+.content p {
+    font-size: 13px;
+    color: #cdd0cb;
+}
+
+.content .text-spc {
+    color: #222831;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.content .text {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 120px auto;
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+        gap: 20px;
+    }
+    
+    .item1 {
+        grid-area: daniel;
+    }
+
+    .item2 {
+        grid-area: jonathan;
+    }
+
+    .item4 {
+        grid-area: jeanette;
+    }
+
+    .item5 {
+        grid-area: patrick;
+    }
+
+    .item6 {
+        grid-area: kira;
+    }
+}
