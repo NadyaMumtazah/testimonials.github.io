@@ -22,7 +22,7 @@ body {
     border-radius: 5px;
     background-image: url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position: 310px 0px;
+    background-position: 180px 0px;
 }
 
 .item2 {
@@ -121,6 +121,7 @@ body {
     
     .item1 {
         grid-area: daniel;
+        background-position: 310px 0px;
     }
 
     .item2 {
